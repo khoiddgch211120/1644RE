@@ -13,7 +13,7 @@ const products = [
       "id": 2,
       "name": "B.F. Sword",
       "description": "Increases attack damage by 10.",
-      "price": "350 gold",
+      "price": "450 gold",
       "image": "https://rerollcdn.com/items/BFSword.png"
     },
     {
