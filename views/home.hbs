@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TFT Product Site</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+
+    <main>
+        <h2>TFT Products</h2>
+        <div class="product-list">
+            {{#each products}}
+                <div class="product-item">
+                    <img src="{{this.image}}" alt="{{this.name}}">
+                    <h3>{{this.name}}</h3>
+                    <p>{{this.description}}</p>
+                    <p>Price: {{this.price}}</p>
+                    <a href="/product/{{this.id}}">View Details</a>
+                </div>
+            {{/each}}
+        </div>
+    </main>
+</body>
+</html>

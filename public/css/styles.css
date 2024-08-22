@@ -1,0 +1,133 @@
+/* public/css/styles.css */
+
+/* Reset mặc định của các trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Đặt chiều cao 100% cho HTML và body */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Cấu trúc chung cho layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #014cbd;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Nội dung chính */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #014cbd;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+/* Danh sách sản phẩm */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Mục sản phẩm */
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 220px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-item h2 {
+    font-size: 18px;
+    color: #90b100;
+    margin: 15px 0 10px 0;
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.product-item .price {
+    font-size: 16px;
+    color: #e60000;
+    margin-bottom: 15px;
+}
+
+.product-item a {
+    display: inline-block;
+    background-color: #6e750c;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item a:hover {
+    background-color: #688b06;
+}
+
+
+.back-to-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-to-home:hover {
+    background-color: #0056b3;
+}
