@@ -6,7 +6,7 @@ const products = [
       "id": 1,
       "name": "Rabadon's Deathcap",
       "description": "Greatly increases ability power.",
-      "price": "2,000 gold",
+      "price": "1,600 gold",
       "image": "https://rerollcdn.com/items/RabadonsDeathcap.png"
     },
     {
